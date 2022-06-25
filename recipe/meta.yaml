@@ -43,8 +43,8 @@ test:
 
 about:
   home: https://pypi.org/project/crowsetta/
-  summary: A tool to work with any format for annotating vocalizations
-  dev_url: https://github.com/NickleDave/crowsetta
+  summary: A Python tool to work with any format for annotating animal vocalizations and bioacoustics data
+  dev_url: https://github.com/vocalpy/crowsetta
   license: BSD-3-Clause
   license_file: LICENSE
 
