@@ -1,5 +1,5 @@
 {% set name = "crowsetta" %}
-{% set version = "4.0.0" %}
+{% set version = "4.0.0.post2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/crowsetta-{{ version }}.tar.gz
-  sha256: 4a4de847708709fc5e6f2e5dc6680a0f29411c9fba9edfab891a7bf66cadb891
+  sha256: c2795ff339d662bc8d07873199f902210ff980b29a4db04672433867cf3e1df6
 
 build:
   number: 0
@@ -43,8 +43,8 @@ test:
 
 about:
   home: https://pypi.org/project/crowsetta/
-  summary: A tool to work with any format for annotating vocalizations
-  dev_url: https://github.com/NickleDave/crowsetta
+  summary: A Python tool to work with any format for annotating animal vocalizations and bioacoustics data
+  dev_url: https://github.com/vocalpy/crowsetta
   license: BSD-3-Clause
   license_file: LICENSE
 
