@@ -1,5 +1,5 @@
 {% set name = "crowsetta" %}
-{% set version = "4.0.0.post2" %}
+{% set version = "5.0.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/crowsetta-{{ version }}.tar.gz
-  sha256: c2795ff339d662bc8d07873199f902210ff980b29a4db04672433867cf3e1df6
+  sha256: 330d9c46aefe9803fe1a243a77688b48fbc8c080f6321de56090f5979d96bb4d
 
 build:
   number: 0
@@ -26,12 +26,12 @@ requirements:
     - birdsong-recognition-dataset >=0.3.2
     - evfuncs >=0.3.5
     - importlib-resources >=5.7.1
-    - numpy >=1.18.1
+    - numpy >=1.21.0
     - pandas >=1.3.5
     - pandera >=0.9.0
-    - python >=3.8
-    - scipy >=1.4.1
-    - pysoundfile >=0.10.3
+    - python >=3.9
+    - scipy >=1.7.0
+    - pysoundfile >=0.12.1
 
 test:
   imports:
