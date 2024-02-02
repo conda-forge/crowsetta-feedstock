@@ -1,5 +1,5 @@
 {% set name = "crowsetta" %}
-{% set version = "5.0.1" %}
+{% set version = "5.0.2.post1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/crowsetta-{{ version }}.tar.gz
-  sha256: 3220bf33a6fbe4eed0216259877b64c52d256526052d9712712f5576d21a1e2a
+  sha256: 3fd71fe4c55df639646e0c961cd883220a9ad92ae77fa7732196a843cc609d6e
 
 build:
   number: 0
