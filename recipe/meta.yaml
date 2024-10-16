@@ -1,5 +1,5 @@
 {% set name = "crowsetta" %}
-{% set version = "5.0.3" %}
+{% set version = "5.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/crowsetta-{{ version }}.tar.gz
-  sha256: 52c42c61d314e0279f69fa00789a2937d503350e6acaba63e80b4200346684a9
+  sha256: dec216936b19e89773f9386d131027ba405b517d3f99fb11b665f74b589c67e0
 
 build:
   number: 0
@@ -37,7 +37,9 @@ test:
   commands:
     - pip check
   requires:
-    - pip
+    # place temporary upper bound on pip so pip check does not fail on soundfile
+    # see https://github.com/conda-forge/pysoundfile-feedstock/issues/22
+    - pip <24.2
 
 about:
   home: https://pypi.org/project/crowsetta/
