@@ -37,7 +37,9 @@ test:
   commands:
     - pip check
   requires:
-    - pip
+    # place temporary upper bound on pip so pip check does not fail on soundfile
+    # see https://github.com/conda-forge/pysoundfile-feedstock/issues/22
+    - pip <24.2
 
 about:
   home: https://pypi.org/project/crowsetta/
