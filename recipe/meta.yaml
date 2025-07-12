@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.11" %}
 {% set name = "crowsetta" %}
-{% set version = "5.1.0" %}
+{% set version = "5.1.1" %}
 
 
 package:
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/crowsetta-{{ version }}.tar.gz
-  sha256: dec216936b19e89773f9386d131027ba405b517d3f99fb11b665f74b589c67e0
+  sha256: ebabd44fc58ef8bea9a9b51c534238a3d9957ad4c322e0025f4aefd34af12660
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -23,14 +23,13 @@ requirements:
     - flit-core
   run:
     - appdirs >=1.4.4
-    - attrs >=19.3.0
-    - importlib-resources >=5.7.1
-    - numpy >=1.22.0
-    - pandas >=1.4.0
-    - pandera >=0.9.0
+    - attrs >=25.3.0
+    - numpy >=1.26.0
+    - pandas >=2.1.0
+    - pandera >=0.25.0
     - python >={{ python_min }}
-    - scipy >=1.8.0
-    - pysoundfile >=0.12.1
+    - scipy >=1.12.0
+    - pysoundfile >=0.13.1
 
 test:
   imports:
