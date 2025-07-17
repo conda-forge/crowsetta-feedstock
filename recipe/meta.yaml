@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "crowsetta" %}
-{% set version = "5.1.1" %}
+{% set version = "5.1.2" %}
 
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/crowsetta-{{ version }}.tar.gz
-  sha256: ebabd44fc58ef8bea9a9b51c534238a3d9957ad4c322e0025f4aefd34af12660
+  sha256: 7722f094076d657a66f3b27f0128a5516c24c3a86471e4a845bea56e9a22f3fb
 
 build:
   number: 0
