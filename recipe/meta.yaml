@@ -1,6 +1,6 @@
-{% set python_min = "3.11" %}
+{% set python_min = "3.12" %}
 {% set name = "crowsetta" %}
-{% set version = "5.1.2" %}
+{% set version = "5.1.3.post1" %}
 
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/crowsetta-{{ version }}.tar.gz
-  sha256: 7722f094076d657a66f3b27f0128a5516c24c3a86471e4a845bea56e9a22f3fb
+  sha256: b4b7687805eb681507eda6595d61cbc580001c088f7cf949fd2504b1bf17ca71
 
 build:
   number: 0
@@ -24,8 +24,8 @@ requirements:
   run:
     - appdirs >=1.4.4
     - attrs >=25.3.0
-    - numpy >=1.26.0
-    - pandas >=2.1.0
+    - numpy >=2.0.0
+    - pandas >=2.2.0
     - pandera >=0.25.0
     - python >={{ python_min }}
     - scipy >=1.12.0
